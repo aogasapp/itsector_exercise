@@ -9,8 +9,6 @@ import com.itsector.exercicio.backoffice.model.Contato;
 public interface ContatoService {
 	List findAll();
 	
-	ResponseEntity findById(long id);
-	
 	Contato create(Contato contato);
 	
 	ResponseEntity update(long id, Contato contato);

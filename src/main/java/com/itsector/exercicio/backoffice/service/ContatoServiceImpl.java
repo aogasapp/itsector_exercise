@@ -22,11 +22,6 @@ public class ContatoServiceImpl implements ContatoService {
 	}
 
 	@Override
-	public ResponseEntity findById(long id) {
-		return repository.findById(id).map(record -> ResponseEntity.ok().body(record)).orElse(ResponseEntity.notFound().build());
-	}
-
-	@Override
 	public Contato create(Contato contato) {
 		return repository.save(contato);
 	}
@@ -34,9 +29,8 @@ public class ContatoServiceImpl implements ContatoService {
 	@Override
 	public ResponseEntity update(long id, Contato contato) {
 		return repository.findById(id).map(record -> {
-            record.setNome	 (contato.getNome());
-            record.setEmail	 (contato.getEmail());
-            record.setTelefone(contato.getTelefone());
+            record.setNome	 	(contato.getNome());
+            record.setPassword	(contato.getPassword());
             
             Contato updated = repository.save(record);
             return ResponseEntity.ok().body(updated);

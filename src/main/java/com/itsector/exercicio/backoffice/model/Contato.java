@@ -1,20 +1,22 @@
 package com.itsector.exercicio.backoffice.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Entity
 @Getter @Setter
 public class Contato {
@@ -23,6 +25,13 @@ public class Contato {
    private Long id;
 
    private String nome;
-   private String email;
-   private String telefone;
+   private String username;
+   private String password;
+
+   @CreationTimestamp
+   private Date createTimestamp;
+   
+   @UpdateTimestamp
+   private Date updateTimestamp;
+   
 }
