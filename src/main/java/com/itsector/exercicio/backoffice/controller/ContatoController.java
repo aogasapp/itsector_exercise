@@ -26,7 +26,6 @@ public class ContatoController {
 	// private ContatoRepository repository;
 	private ContatoService contatoService;
 	
-
 	// == Construtores ==
 	/*ContatoController(ContatoRepository contatoRepository) {
 		this.repository = contatoRepository;
