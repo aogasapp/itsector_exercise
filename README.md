@@ -46,3 +46,14 @@ Para persistência foi utilizado o Mysql. Foi acrescentado um script para criaç
 Os dados de acesso à base (application.properties) foram deixados em branco. Numa aplicação em produção essa informação poderia ser passada em linha de comando ou em arquivo do servidor.
 
 # Utilização e exemplos
+- Listagem de usuários
+![alt text](https://github.com/aogasapp/itsector_exercise/blob/master/Exemplos%20de%20utilizacao/listagem%20de%20usuarios.png)
+
+- Adição de usuário
+![alt text](https://github.com/aogasapp/itsector_exercise/blob/master/Exemplos%20de%20utilizacao/adicao%20de%20usuario.png)
+
+- Remoção de usuário
+![alt text](https://github.com/aogasapp/itsector_exercise/blob/master/Exemplos%20de%20utilizacao/remocao%20de%20usuario.png)
+
+- Atualização de dados
+![alt text](https://github.com/aogasapp/itsector_exercise/blob/master/Exemplos%20de%20utilizacao/alteracao%20de%20usuario.png)
